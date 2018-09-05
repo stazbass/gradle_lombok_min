@@ -1,0 +1,175 @@
+[
+  {
+    "orderId": 326849705,
+    "sequence": [
+      "determine_cancellable_items",
+      "determine_purchasable_items",
+      "determine_extension_options",
+      "determine_returnable_items",
+      "determine_address_changeable",
+      "determine_e_book_access",
+      "determine_learn_smart_info",
+      "determine_subscription_information",
+      "determine_order_level_totals",
+      "determine_order_line_level_totals",
+      "determine_issue_reportable_items",
+      "determine_order_level_diagnostics"
+    ],
+    "endPoint": null,
+    "data": {
+      "verified.determine_learn_smart_info": "2018-08-16 06:46:41.661 -0700",
+      "verified.determine_e_book_access": "2018-08-16 06:46:41.656 -0700",
+      "LAST_PLUGIN_EVALUATED": "determine_order_level_diagnostics",
+      "determine_order_line_level_totals": "Not yet implemented",
+      "Inputs": {
+        "orderIds": null,
+        "orderId": 326849705,
+        "orderLineIds": null,
+        "itemList": null,
+        "userId": null,
+        "orderKeys": null,
+        "issues": null,
+        "address": null,
+        "order": null,
+        "forceSequenceReload": false,
+        "inputData": null,
+        "ordersFetchLimitForUser": 0,
+        "shortResponse": false,
+        "paymentInfo": null
+      }
+    },
+    "errors": {},
+    "structuredErrors": {},
+    "order": {
+      "transitoryData": {
+        "canChangeAddress": false,
+        "chargeDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "netChargeDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "refundDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "orderSummary": {
+          "orderLineCount": 1,
+          "rwywCount": 0,
+          "orderPaymentCount": 0,
+          "orderLinesByCatalogType": {
+            "FIXED_RECURRING_ITEM": 1
+          },
+          "orderLinesByStatus": {
+            "SHOPPING": 1
+          },
+          "booksPerShipment": {},
+          "paymentsByType": {},
+          "paymentsByDebitCredit": {},
+          "paymentsByStatus": {}
+        }
+      },
+      "id": 326849705,
+      "uuid": "8ca6a6fe-2b2c-4573-b68a-f733c4358226",
+      "lastExecutionStatus": "determine_order_level_diagnostics-verified",
+      "annotation": {
+        "subscriptionId": "ddhkhg"
+      },
+      "createdBy": 75379301,
+      "createdDate": "2018-07-27 17:38:44.000 -0700",
+      "modifiedBy": null,
+      "modifiedDate": "2018-07-27 17:38:46.000 -0700",
+      "orderKey": "V1ZJ14NE",
+      "orderDate": "1999-12-05 00:00:00.000 -0800",
+      "userId": 75379301,
+      "uvn": null,
+      "status": "SHOPPING",
+      "shippingAddress": null,
+      "billingAddress": null,
+      "orderType": "REGULAR",
+      "orderLines": [
+        {
+          "transitoryData": {
+            "canCancel": false,
+            "canPurchase": false,
+            "canExtend": false,
+            "canReturn": false,
+            "total": 0,
+            "canReportIssue": false
+          },
+          "id": 953862514,
+          "uuid": "1a16bc6e-1c87-4715-9763-de9f68275205",
+          "lastExecutionStatus": null,
+          "annotation": {
+            "experimentId": "BASE",
+            "catalogItemSource": "NETSUITE",
+            "hasTrial": "true"
+          },
+          "createdBy": 75379301,
+          "createdDate": "2018-07-27 17:38:44.000 -0700",
+          "modifiedBy": null,
+          "modifiedDate": "2018-07-27 17:38:45.000 -0700",
+          "orderId": 326849705,
+          "catalogItemId": "3366",
+          "catalogItemType": "FIXED_RECURRING_ITEM",
+          "catalogItemName": "EasyBib Plus Monthly with Trial",
+          "quantity": 1,
+          "inventoryId": null,
+          "inventoryReservationId": null,
+          "itemType": "DIGITAL",
+          "transactionType": "SELL",
+          "orderLineStatus": "SHOPPING",
+          "displayStatus": null,
+          "pricingLogId": "d724b4b4-87b4-3e5f-b66b-51b6c388f834",
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "originalItemPrice": 0,
+          "listPrice": null,
+          "parentLineId": null,
+          "isCustomerVisible": true,
+          "rentalExpirationDate": null,
+          "orderLinePhysical": null,
+          "orderLineDigital": {
+            "orderId": 326849705,
+            "lineId": 953862514,
+            "accessCode": null,
+            "createdBy": 75379301,
+            "createdDate": "2018-07-27 17:38:44.000 -0700",
+            "modifiedBy": null,
+            "modifiedDate": "2018-07-27 17:38:45.000 -0700",
+            "fulfillDate": "2018-07-27 17:38:45.000 -0700"
+          },
+          "orderPayments": [],
+          "status": "SHOPPING",
+          "transType": "SELL",
+          "physical": false,
+          "shipOrFulfillDate": "2018-07-27 17:38:45.000 -0700",
+          "digital": true,
+          "orderLineAnnotation": {
+            "experimentId": "BASE",
+            "catalogItemSource": "NETSUITE",
+            "hasTrial": "true"
+          }
+        }
+      ],
+      "orderShipments": null,
+      "orderPayments": [],
+      "issues": [],
+      "throwExceptionOnDuplicateOrderLine": false,
+      "successfulOrderPayments": [],
+      "orderAnnotations": {
+        "subscriptionId": "ddhkhg"
+      }
+    },
+    "success": true
+  }
+]

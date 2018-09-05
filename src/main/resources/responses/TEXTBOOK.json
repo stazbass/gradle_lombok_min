@@ -1,0 +1,246 @@
+[
+  {
+    "orderId": 324060042,
+    "sequence": [
+      "determine_cancellable_items_v3",
+      "determine_purchasable_items",
+      "determine_extension_options",
+      "determine_returnable_items",
+      "determine_address_changeable",
+      "determine_e_book_access",
+      "determine_order_level_totals",
+      "determine_order_line_level_totals",
+      "determine_issue_reportable_items",
+      "determine_order_level_diagnostics_v3"
+    ],
+    "endPoint": null,
+    "data": {
+      "verified.determine_e_book_access": "2018-08-16 03:07:03.589 -0700",
+      "LAST_PLUGIN_EVALUATED": "determine_order_level_diagnostics_v3",
+      "determine_order_line_level_totals": "Not yet implemented",
+      "Inputs": {
+        "orderIds": null,
+        "orderId": 324060042,
+        "orderLineIds": null,
+        "itemList": null,
+        "userId": null,
+        "orderKeys": null,
+        "issues": null,
+        "address": null,
+        "order": null,
+        "forceSequenceReload": false,
+        "inputData": null,
+        "ordersFetchLimitForUser": 0,
+        "shortResponse": false,
+        "paymentInfo": null
+      }
+    },
+    "errors": {},
+    "structuredErrors": {},
+    "order": {
+      "transitoryData": {
+        "canChangeAddress": false,
+        "chargeDetails": {
+          "itemPrice": 11.49,
+          "shippingPrice": 5.99,
+          "tax": 0,
+          "totalPrice": 17.48
+        },
+        "netChargeDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "refundDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "orderSummary": {
+          "orderLineCount": 1,
+          "rwywCount": 0,
+          "orderPaymentCount": 0,
+          "orderLinesByCatalogType": {
+            "TEXTBOOK": 1
+          },
+          "orderLinesByStatus": {
+            "PLACED": 1
+          },
+          "booksPerShipment": {
+            "-1": 1
+          },
+          "paymentsByDebitCredit": {},
+          "paymentsByStatus": {}
+        }
+      },
+      "id": 324060042,
+      "uuid": "59dcccca-05bc-469c-9a6d-b78c609e0d55",
+      "lastExecutionStatus": "determine_order_level_diagnostics_v3-verified",
+      "annotation": {
+        "netsuiteExperimentFlag": "true",
+        "fraud.AddressCheck": "The shipping and/or billing address of the order is in the black list addresses",
+        "authorizePaymentExternalUuid": "6f0d364b-f4a5-40a6-a29e-c9fd357a6613",
+        "vertexCustomerClassCode": "Private",
+        "placedViaPlaceOrder": "true",
+        "api_testing": "true",
+        "fraud.PhoneCheck": "The phone number of the order is in the black list",
+        "legacy_billing_address_id": "1",
+        "legacy_shipping_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX",
+        "fraud_suspected": "true"
+      },
+      "createdBy": 75361659,
+      "createdDate": "2018-06-01 00:02:33.000 -0700",
+      "modifiedBy": null,
+      "modifiedDate": "2018-06-01 08:45:35.000 -0700",
+      "orderKey": "V4TWPX27",
+      "orderDate": "2018-06-01 00:02:33.000 -0700",
+      "userId": 75361659,
+      "uvn": null,
+      "status": "REVIEW_FRAUD",
+      "shippingAddress": {
+        "id": 178992323,
+        "orderId": null,
+        "orderAddressType": "SHIPPING_ADDRESS",
+        "firstName": "Api",
+        "lastName": "Testing",
+        "line1": "203 Ingram Dr",
+        "line2": "",
+        "city": "Roseburg",
+        "state": "OR",
+        "zip": "97471-7153",
+        "country": "US",
+        "phone": "4088558700",
+        "createdBy": null,
+        "createdDate": null,
+        "modifiedBy": null,
+        "modifiedDate": null,
+        "5DigitZip": "97471"
+      },
+      "billingAddress": {
+        "id": 178992324,
+        "orderId": null,
+        "orderAddressType": "BILLING_ADDRESS",
+        "firstName": "Api",
+        "lastName": "Testing",
+        "line1": "3990 Freedom Cir",
+        "line2": "",
+        "city": "Santa Clara",
+        "state": "CA",
+        "zip": "95054",
+        "country": "US",
+        "phone": "4088558700",
+        "createdBy": null,
+        "createdDate": null,
+        "modifiedBy": null,
+        "modifiedDate": null,
+        "5DigitZip": "95054"
+      },
+      "orderType": "REGULAR",
+      "orderLines": [
+        {
+          "transitoryData": {
+            "canCancel": false,
+            "canPurchase": false,
+            "canExtend": false,
+            "canReturn": false,
+            "total": 17.48,
+            "canReportIssue": false
+          },
+          "id": 947646696,
+          "uuid": "1e23e96f-10a8-4b5a-8b58-4f606a4706c2",
+          "lastExecutionStatus": null,
+          "annotation": {
+            "vertexTaxProductClass": "College Textbook",
+            "eligibleProviders": "VENDOR",
+            "price-expires": "2018-06-02 07:02",
+            "lastPriceRefresh": "2018-06-01 00:02:33",
+            "isPrintedAccessCode": "true",
+            "price-information": "{\"nameValuePairs\":{\"_counts\":\"INGRAM_KY,VENDOR,1,1000009.0\",\"expires\":\"2018-06-02 07:02\",\"fallbackSrcCost\":\"1.00\",\"condition\":\"New\",\"priceType\":\"Sell\",\"provider\":\"VENDOR\",\"algorithm\":\"JIT based\",\"version\":\"2.0\"}}",
+            "provider": "VENDOR",
+            "sourcingDecisionParams": "{\"ean\":\"9780077424855\",\"itemCondition\":\"100\",\"zip\":\"97471\",\"context\":\"PRE_CHECKOUT\",\"priceType\":\"Sell\",\"catalogItemId\":\"LBP-34757123\"}"
+          },
+          "createdBy": 75361659,
+          "createdDate": "2018-06-01 08:45:35.000 -0700",
+          "modifiedBy": null,
+          "modifiedDate": "2018-06-01 08:45:35.000 -0700",
+          "orderId": 324060042,
+          "catalogItemId": "LBP-34757123",
+          "catalogItemType": "TEXTBOOK",
+          "catalogItemName": "Premium Content Card for Human Resource Management",
+          "quantity": 1,
+          "inventoryId": null,
+          "inventoryReservationId": null,
+          "itemType": "PHYSICAL",
+          "transactionType": "SELL",
+          "orderLineStatus": "PLACED",
+          "displayStatus": null,
+          "pricingLogId": "668d3836-807d-43a1-8add-f958b0f62dd0",
+          "itemPrice": 11.49,
+          "shippingPrice": 5.99,
+          "tax": 0,
+          "originalItemPrice": 11.49,
+          "listPrice": 19.5,
+          "parentLineId": null,
+          "isCustomerVisible": true,
+          "rentalExpirationDate": null,
+          "orderLinePhysical": {
+            "lineId": 947646696,
+            "orderCondition": 100,
+            "shipMethodId": 643,
+            "shippingAddressId": 178992323,
+            "gdd": "2018-06-11 00:00:00.000 -0700",
+            "transitTime": 345600,
+            "merchantId": null,
+            "shipmentId": null,
+            "rentalReturnedDate": null,
+            "originalLineId": null,
+            "shippedInventoryCondition": null,
+            "createdBy": 75361659,
+            "createdDate": "2018-06-01 08:45:35.184 -0700",
+            "modifiedBy": null,
+            "modifiedDate": "2018-06-01 08:45:35.184 -0700"
+          },
+          "orderLineDigital": null,
+          "orderPayments": [],
+          "status": "PLACED",
+          "transType": "SELL",
+          "physical": true,
+          "digital": false,
+          "shipOrFulfillDate": "2018-06-11 00:00:00.000 -0700",
+          "orderLineAnnotation": {
+            "vertexTaxProductClass": "College Textbook",
+            "eligibleProviders": "VENDOR",
+            "price-expires": "2018-06-02 07:02",
+            "lastPriceRefresh": "2018-06-01 00:02:33",
+            "isPrintedAccessCode": "true",
+            "price-information": "{\"nameValuePairs\":{\"_counts\":\"INGRAM_KY,VENDOR,1,1000009.0\",\"expires\":\"2018-06-02 07:02\",\"fallbackSrcCost\":\"1.00\",\"condition\":\"New\",\"priceType\":\"Sell\",\"provider\":\"VENDOR\",\"algorithm\":\"JIT based\",\"version\":\"2.0\"}}",
+            "provider": "VENDOR",
+            "sourcingDecisionParams": "{\"ean\":\"9780077424855\",\"itemCondition\":\"100\",\"zip\":\"97471\",\"context\":\"PRE_CHECKOUT\",\"priceType\":\"Sell\",\"catalogItemId\":\"LBP-34757123\"}"
+          }
+        }
+      ],
+      "orderShipments": [],
+      "orderPayments": [],
+      "issues": [],
+      "throwExceptionOnDuplicateOrderLine": false,
+      "successfulOrderPayments": [],
+      "orderAnnotations": {
+        "netsuiteExperimentFlag": "true",
+        "fraud.AddressCheck": "The shipping and/or billing address of the order is in the black list addresses",
+        "authorizePaymentExternalUuid": "6f0d364b-f4a5-40a6-a29e-c9fd357a6613",
+        "vertexCustomerClassCode": "Private",
+        "placedViaPlaceOrder": "true",
+        "api_testing": "true",
+        "fraud.PhoneCheck": "The phone number of the order is in the black list",
+        "legacy_billing_address_id": "1",
+        "legacy_shipping_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX",
+        "fraud_suspected": "true"
+      }
+    },
+    "success": true
+  }
+]

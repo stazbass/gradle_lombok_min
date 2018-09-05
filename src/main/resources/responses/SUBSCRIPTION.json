@@ -1,0 +1,327 @@
+[
+  {
+    "orderId": 324060133,
+    "sequence": [
+      "determine_cancellable_items",
+      "determine_purchasable_items",
+      "determine_extension_options",
+      "determine_returnable_items",
+      "determine_address_changeable",
+      "determine_e_book_access",
+      "determine_learn_smart_info",
+      "determine_subscription_information",
+      "determine_order_level_totals",
+      "determine_order_line_level_totals",
+      "determine_issue_reportable_items",
+      "determine_order_level_diagnostics"
+    ],
+    "endPoint": null,
+    "data": {
+      "verified.determine_learn_smart_info": "2018-08-16 03:05:42.499 -0700",
+      "verified.determine_e_book_access": "2018-08-16 03:05:42.370 -0700",
+      "LAST_PLUGIN_EVALUATED": "determine_order_level_diagnostics",
+      "determine_order_line_level_totals": "Not yet implemented",
+      "Inputs": {
+        "orderIds": null,
+        "orderId": 324060133,
+        "orderLineIds": null,
+        "itemList": null,
+        "userId": null,
+        "orderKeys": null,
+        "issues": null,
+        "address": null,
+        "order": null,
+        "forceSequenceReload": false,
+        "inputData": null,
+        "ordersFetchLimitForUser": 0,
+        "shortResponse": false,
+        "paymentInfo": null
+      }
+    },
+    "errors": {},
+    "structuredErrors": {},
+    "order": {
+      "transitoryData": {
+        "canChangeAddress": false,
+        "chargeDetails": {
+          "itemPrice": 119.95,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 119.95
+        },
+        "netChargeDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 119.95
+        },
+        "refundDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "orderSummary": {
+          "orderLineCount": 1,
+          "rwywCount": 0,
+          "orderPaymentCount": 1,
+          "orderLinesByCatalogType": {
+            "SUBSCRIPTION": 1
+          },
+          "orderLinesByStatus": {
+            "FULFILLED": 1
+          },
+          "booksPerShipment": {},
+          "paymentsByType": {
+            "CREDITCARD": 1
+          },
+          "paymentsByDebitCredit": {
+            "DEBIT": 1
+          },
+          "paymentsByStatus": {
+            "INVOICED": 1
+          }
+        }
+      },
+      "id": 324060133,
+      "uuid": "f8d1ca95-a6d7-4e11-b7de-934b3fc722d8",
+      "lastExecutionStatus": "determine_order_level_diagnostics-verified",
+      "annotation": {
+        "netsuiteExperimentFlag": "false",
+        "cust_monetary_transaction_id": "878193511",
+        "EMAIL.csOrderConfirm": "\"2018-06-01 02:48:56.229 -0700\"",
+        "EMAIL.Order_Confirmation": "\"2018-06-01 02:48:56.229 -0700\"",
+        "vertexCustomerClassCode": "Private",
+        "LegacyOrderType": "REGULAR",
+        "order_payment_queue.1": "{\"currency\":\"USD\",\"deviceData\":null,\"status\":\"PROCESSED\",\"amount\":119.95,\"cheggTransactionId\":\"sZrxmXwETl+VgkFRil/SlA\",\"cmtId\":878193511,\"mopId\":116052329,\"sourceTransactionId\":null,\"paymentAccountType\":\"CREDIT CARD TOKEN\"}",
+        "api_testing": "true",
+        "EMAIL.Order_Confirmation_MESSAGE_ID": "[00000000-0000-0000-0000-000000000000]",
+        "legacy_billing_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX",
+        "fraud_bypassed": "2018-06-01T02:48:56.541-07:00"
+      },
+      "createdBy": 75361025,
+      "createdDate": "2018-06-01 02:48:53.000 -0700",
+      "modifiedBy": null,
+      "modifiedDate": "2018-06-01 02:48:57.000 -0700",
+      "orderKey": "JC3BX0T3",
+      "orderDate": "2018-06-01 02:48:53.000 -0700",
+      "userId": 75361025,
+      "uvn": null,
+      "status": "PLACED",
+      "shippingAddress": null,
+      "billingAddress": {
+        "id": 178992447,
+        "orderId": null,
+        "orderAddressType": "BILLING_ADDRESS",
+        "firstName": "Api",
+        "lastName": "Testing",
+        "line1": "3990 Freedom Cir",
+        "line2": "",
+        "city": "Santa Clara",
+        "state": "CA",
+        "zip": "95054",
+        "country": "US",
+        "phone": "4088558700",
+        "createdBy": null,
+        "createdDate": null,
+        "modifiedBy": null,
+        "modifiedDate": null,
+        "5DigitZip": "95054"
+      },
+      "orderType": "REGULAR",
+      "orderLines": [
+        {
+          "transitoryData": {
+            "canCancel": true,
+            "refundDetails": {
+              "itemPrice": 119.95,
+              "shippingPrice": 0,
+              "tax": 0
+            },
+            "refundAmountAvailable": 119.95,
+            "canPurchase": false,
+            "canExtend": false,
+            "canReturn": false,
+            "subscriptionInformation": [
+              {
+                "id": 58940290,
+                "userId": 75361025,
+                "orderId": 324060133,
+                "orderLineId": 947646790,
+                "catalogId": "SCP-5",
+                "paymentId": 116052329,
+                "renew": true,
+                "status": "ACTIVE",
+                "createdBy": "fulfill_subscription",
+                "modifiedBy": null,
+                "renewalPeriod": 365,
+                "renewalPrice": 119.95,
+                "initialPeriod": 365,
+                "initialPrice": 119.95,
+                "createdDate": "2018-06-01T02:48:56.000-07:00",
+                "modifiedDate": "2018-06-01T02:48:56.000-07:00",
+                "renewalDate": "2019-06-01T00:00:00.000-07:00",
+                "suspendDate": null,
+                "nextPointsPostingDate": "2018-07-01T02:48:56.000-07:00",
+                "lastErrorCode": null,
+                "transLogId": null,
+                "subscriptionLogId": null,
+                "lastChargeMessage": null,
+                "canSwap": false,
+                "canPause": false,
+                "canCancel": true,
+                "orderLineLogId": null,
+                "isPaymentSuccessful": false,
+                "isSuspendPending": false,
+                "isSwapPending": false,
+                "isCancelPending": false,
+                "cancelledDate": null
+              }
+            ],
+            "canRenew": false,
+            "canSwapSubscription": false,
+            "total": 119.95,
+            "canReportIssue": false
+          },
+          "id": 947646790,
+          "uuid": "1bb1d319-1a2b-4558-aa97-0935d9dd6e04",
+          "lastExecutionStatus": null,
+          "annotation": {
+            "vertexTaxProductClass": "Chegg Study",
+            "price-expires": "2018-06-02 06:36",
+            "service_start_date": "2018-06-01T02:48:56.286-07:00",
+            "price-information": "{\"nameValuePairs\":{\"expires\":\"2018-06-02 06:36\",\"initialPeriod\":\"365\",\"experiment\":\"P253A,P255A,P256A,P256B,P257A,P257B\",\"intialPeriodPointsCredit\":\"6000\",\"priceType\":\"Subscription\",\"renewalPeriod\":\"365\",\"renewalPeriodPointsCredit\":\"6000\",\"renewalPrice\":\"119.95\"}}",
+            "service_end_date": "2019-06-01T00:00:00.000-07:00",
+            "taxesFiled": "FILED",
+            "legacy_order_line_log_id": "553315451",
+            "subscriptionId": "58940290"
+          },
+          "createdBy": 75361025,
+          "createdDate": "2018-06-01 02:48:53.000 -0700",
+          "modifiedBy": null,
+          "modifiedDate": "2018-06-01 02:48:57.000 -0700",
+          "orderId": 324060133,
+          "catalogItemId": "SCP-5",
+          "catalogItemType": "SUBSCRIPTION",
+          "catalogItemName": "Annual Chegg Study membership",
+          "quantity": 1,
+          "inventoryId": null,
+          "inventoryReservationId": null,
+          "itemType": "DIGITAL",
+          "transactionType": "SUBSCRIPTION",
+          "orderLineStatus": "FULFILLED",
+          "displayStatus": null,
+          "pricingLogId": "9a39f12a-2722-4f0a-8bec-a48e9071a6fb",
+          "itemPrice": 119.95,
+          "shippingPrice": 0,
+          "tax": 0,
+          "originalItemPrice": 119.95,
+          "listPrice": null,
+          "parentLineId": null,
+          "isCustomerVisible": true,
+          "rentalExpirationDate": null,
+          "orderLinePhysical": null,
+          "orderLineDigital": {
+            "orderId": 324060133,
+            "lineId": 947646790,
+            "accessCode": null,
+            "createdBy": 75361025,
+            "createdDate": "2018-06-01 02:48:53.159 -0700",
+            "modifiedBy": null,
+            "modifiedDate": null,
+            "fulfillDate": "2018-06-01 02:48:56.229 -0700"
+          },
+          "orderPayments": [],
+          "status": "FULFILLED",
+          "transType": "SUBSCRIPTION",
+          "physical": false,
+          "digital": true,
+          "shipOrFulfillDate": "2018-06-01 02:48:56.229 -0700",
+          "orderLineAnnotation": {
+            "vertexTaxProductClass": "Chegg Study",
+            "price-expires": "2018-06-02 06:36",
+            "service_start_date": "2018-06-01T02:48:56.286-07:00",
+            "price-information": "{\"nameValuePairs\":{\"expires\":\"2018-06-02 06:36\",\"initialPeriod\":\"365\",\"experiment\":\"P253A,P255A,P256A,P256B,P257A,P257B\",\"intialPeriodPointsCredit\":\"6000\",\"priceType\":\"Subscription\",\"renewalPeriod\":\"365\",\"renewalPeriodPointsCredit\":\"6000\",\"renewalPrice\":\"119.95\"}}",
+            "service_end_date": "2019-06-01T00:00:00.000-07:00",
+            "taxesFiled": "FILED",
+            "legacy_order_line_log_id": "553315451",
+            "subscriptionId": "58940290"
+          }
+        }
+      ],
+      "orderShipments": null,
+      "orderPayments": [
+        {
+          "id": 254106908,
+          "origOrderPaymentId": null,
+          "orderId": 324060133,
+          "orderUUID": null,
+          "orderLineId": null,
+          "externalId": null,
+          "status": "INVOICED",
+          "notes": null,
+          "billingAddressId": 178992447,
+          "orderPaymentMOPtype": "CREDITCARD",
+          "transSource": "BRAINTREE",
+          "uniqueId": "sZrxmXwETl+VgkFRil/SlA",
+          "cmtId": 878193511,
+          "legacyTransactionId": 878193511,
+          "paymentServiceTransactionId": "sZrxmXwETl+VgkFRil/SlA",
+          "createdBy": 75361025,
+          "createdDate": "2018-06-01 02:48:54.135 -0700",
+          "modifiedBy": null,
+          "modifiedDate": null,
+          "transactionDate": "2018-06-01 02:48:54.000 -0700",
+          "amount": 119.95,
+          "mopidentifier": "116052329",
+          "cvv": null
+        }
+      ],
+      "issues": null,
+      "throwExceptionOnDuplicateOrderLine": false,
+      "successfulOrderPayments": [
+        {
+          "id": 254106908,
+          "origOrderPaymentId": null,
+          "orderId": 324060133,
+          "orderUUID": null,
+          "orderLineId": null,
+          "externalId": null,
+          "status": "INVOICED",
+          "notes": null,
+          "billingAddressId": 178992447,
+          "orderPaymentMOPtype": "CREDITCARD",
+          "transSource": "BRAINTREE",
+          "uniqueId": "sZrxmXwETl+VgkFRil/SlA",
+          "cmtId": 878193511,
+          "legacyTransactionId": 878193511,
+          "paymentServiceTransactionId": "sZrxmXwETl+VgkFRil/SlA",
+          "createdBy": 75361025,
+          "createdDate": "2018-06-01 02:48:54.135 -0700",
+          "modifiedBy": null,
+          "modifiedDate": null,
+          "transactionDate": "2018-06-01 02:48:54.000 -0700",
+          "amount": 119.95,
+          "mopidentifier": "116052329",
+          "cvv": null
+        }
+      ],
+      "orderAnnotations": {
+        "netsuiteExperimentFlag": "false",
+        "cust_monetary_transaction_id": "878193511",
+        "EMAIL.csOrderConfirm": "\"2018-06-01 02:48:56.229 -0700\"",
+        "EMAIL.Order_Confirmation": "\"2018-06-01 02:48:56.229 -0700\"",
+        "vertexCustomerClassCode": "Private",
+        "LegacyOrderType": "REGULAR",
+        "order_payment_queue.1": "{\"currency\":\"USD\",\"deviceData\":null,\"status\":\"PROCESSED\",\"amount\":119.95,\"cheggTransactionId\":\"sZrxmXwETl+VgkFRil/SlA\",\"cmtId\":878193511,\"mopId\":116052329,\"sourceTransactionId\":null,\"paymentAccountType\":\"CREDIT CARD TOKEN\"}",
+        "api_testing": "true",
+        "EMAIL.Order_Confirmation_MESSAGE_ID": "[00000000-0000-0000-0000-000000000000]",
+        "legacy_billing_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX",
+        "fraud_bypassed": "2018-06-01T02:48:56.541-07:00"
+      }
+    },
+    "success": true
+  }
+]

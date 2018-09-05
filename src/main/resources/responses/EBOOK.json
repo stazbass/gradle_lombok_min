@@ -1,0 +1,252 @@
+[{
+    OrderApiClient.OrderQuery query= new OrderApiClient.OrderQuery("some_user_id", "some_order_id");
+    System.out.println(query.toEntity(MediaType.APPLICATION_JSON_TYPE).toString());
+  }
+  {
+    "orderId": 324060058,
+    "sequence": [
+      "determine_cancellable_items_v3",
+      "determine_purchasable_items",
+      "determine_extension_options",
+      "determine_returnable_items",
+      "determine_address_changeable",
+      "determine_e_book_access",
+      "determine_order_level_totals",
+      "determine_order_line_level_totals",
+      "determine_issue_reportable_items",
+      "determine_order_level_diagnostics_v3"
+    ],
+    "endPoint": null,
+    "data": {
+      "LAST_PLUGIN_EVALUATED": "determine_order_level_diagnostics_v3",
+      "determine_order_line_level_totals": "Not yet implemented",
+      "Inputs": {
+        "orderIds": null,
+        "orderId": 324060058,
+        "orderLineIds": null,
+        "itemList": null,
+        "userId": null,
+        "orderKeys": null,
+        "issues": null,
+        "address": null,
+        "order": null,
+        "forceSequenceReload": false,
+        "inputData": null,
+        "ordersFetchLimitForUser": 0,
+        "shortResponse": false,
+        "paymentInfo": null
+      }
+    },
+    "errors": {},
+    "structuredErrors": {},
+    "order": {
+      "transitoryData": {
+        "canChangeAddress": false,
+        "chargeDetails": {
+          "itemPrice": 52.65,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 52.65
+        },
+        "netChargeDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 52.65
+        },
+        "refundDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "orderSummary": {
+          "orderLineCount": 1,
+          "rwywCount": 0,
+          "orderPaymentCount": 1,
+          "orderLinesByCatalogType": {
+            "EBOOK": 1
+          },
+          "orderLinesByStatus": {
+            "FULFILLED": 1
+          },
+          "booksPerShipment": {},
+          "paymentsByDebitCredit": {
+            "DEBIT": 1
+          },
+          "paymentsByStatus": {
+            "SUCCESS": 1
+          }
+        }
+      },
+      "id": 324060058,
+      "uuid": "052edd7a-8adb-40d7-acd6-57084593db90",
+      "lastExecutionStatus": "determine_order_level_diagnostics_v3-verified",
+      "annotation": {
+        "netsuiteExperimentFlag": "true",
+        "EMAIL.Order_Confirmation": "\"2018-06-01 08:45:40.286 -0700\"",
+        "authorizePaymentExternalUuid": "721be467-5a8e-4d05-b37f-40ece339c733",
+        "placedViaPlaceOrder": "true",
+        "vertexCustomerClassCode": "Private",
+        "api_testing": "true",
+        "EMAIL.Order_Confirmation_MESSAGE_ID": "[00000000-0000-0000-0000-000000000000]",
+        "legacy_billing_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX",
+        "fraud_bypassed": "2018-06-01T08:45:41.372-07:00"
+      },
+      "createdBy": 75361705,
+      "createdDate": "2018-06-01 00:23:43.000 -0700",
+      "modifiedBy": null,
+      "modifiedDate": "2018-06-01 11:10:37.000 -0700",
+      "orderKey": "YTV9HPGV",
+      "orderDate": "2018-06-01 00:23:43.000 -0700",
+      "userId": 75361705,
+      "uvn": null,
+      "status": "PLACED",
+      "shippingAddress": null,
+      "billingAddress": {
+        "id": 178992351,
+        "orderId": null,
+        "orderAddressType": "BILLING_ADDRESS",
+        "firstName": "Api",
+        "lastName": "Testing",
+        "line1": "3990 Freedom Cir",
+        "line2": "",
+        "city": "Santa Clara",
+        "state": "CA",
+        "zip": "95054",
+        "country": "US",
+        "phone": "4088558700",
+        "createdBy": null,
+        "createdDate": null,
+        "modifiedBy": null,
+        "modifiedDate": null,
+        "5DigitZip": "95054"
+      },
+      "orderType": "REGULAR",
+      "orderLines": [
+        {
+          "transitoryData": {
+            "canCancel": false,
+            "canPurchase": true,
+            "canExtend": true,
+            "canReturn": false,
+            "eReaderUrl": null,
+            "total": 52.65,
+            "canReportIssue": false
+          },
+          "id": 947646713,
+          "uuid": "48639dc8-b47a-4c22-b2cd-c8d4395a88de",
+          "lastExecutionStatus": null,
+          "annotation": {
+            "vertexTaxProductClass": "E-Trade Book Rental",
+            "ebookPublisherCost": "45.00",
+            "vbid_sku": "9780470913796",
+            "service_start_date": "2018-06-01T00:23:43.000-07:00",
+            "price-expires": "2018-06-02 07:23",
+            "price-information": "{\"nameValuePairs\":{\"ebookRentType\":\"Regular\",\"termDays\":\"180\",\"pricingContractId\":\"278\",\"termName\":\"180-day Rental\",\"sourceCost\":\"45.0\",\"expires\":\"2018-06-02 07:23\",\"term\":\"EBOOK\",\"priceType\":\"Rent\",\"dueDate\":\"2018-11-28\",\"termId\":\"107\"}}",
+            "service_end_date": "2018-11-28T00:00:00.000-08:00",
+            "provider": "VST",
+            "taxesFiled": "FILED"
+          },
+          "createdBy": 75361705,
+          "createdDate": "2018-06-01 08:45:38.000 -0700",
+          "modifiedBy": null,
+          "modifiedDate": "2018-06-01 11:10:37.000 -0700",
+          "orderId": 324060058,
+          "catalogItemId": "LBP-28905315",
+          "catalogItemType": "EBOOK",
+          "catalogItemName": "Investment Ethics",
+          "quantity": 1,
+          "inventoryId": null,
+          "inventoryReservationId": null,
+          "itemType": "DIGITAL",
+          "transactionType": "RENT",
+          "orderLineStatus": "FULFILLED",
+          "displayStatus": null,
+          "pricingLogId": "5d48c84a-6d99-4e85-a349-aadf10d84b3a",
+          "itemPrice": 52.65,
+          "shippingPrice": 0,
+          "tax": 0,
+          "originalItemPrice": 52.65,
+          "listPrice": 62.5,
+          "parentLineId": null,
+          "isCustomerVisible": true,
+          "rentalExpirationDate": "2018-11-28 00:00:00.000 -0800",
+          "orderLinePhysical": null,
+          "orderLineDigital": {
+            "orderId": 324060058,
+            "lineId": 947646713,
+            "accessCode": "d69a028cef5b1b169370da0fc1b15498",
+            "createdBy": 75361705,
+            "createdDate": "2018-06-01 08:45:38.912 -0700",
+            "modifiedBy": null,
+            "modifiedDate": null,
+            "fulfillDate": "2018-06-01 08:45:40.286 -0700"
+          },
+          "orderPayments": [],
+          "status": "FULFILLED",
+          "transType": "RENT",
+          "physical": false,
+          "shipOrFulfillDate": "2018-06-01 08:45:40.286 -0700",
+          "digital": true,
+          "orderLineAnnotation": {
+            "vertexTaxProductClass": "E-Trade Book Rental",
+            "ebookPublisherCost": "45.00",
+            "vbid_sku": "9780470913796",
+            "service_start_date": "2018-06-01T00:23:43.000-07:00",
+            "price-expires": "2018-06-02 07:23",
+            "price-information": "{\"nameValuePairs\":{\"ebookRentType\":\"Regular\",\"termDays\":\"180\",\"pricingContractId\":\"278\",\"termName\":\"180-day Rental\",\"sourceCost\":\"45.0\",\"expires\":\"2018-06-02 07:23\",\"term\":\"EBOOK\",\"priceType\":\"Rent\",\"dueDate\":\"2018-11-28\",\"termId\":\"107\"}}",
+            "service_end_date": "2018-11-28T00:00:00.000-08:00",
+            "provider": "VST",
+            "taxesFiled": "FILED"
+          }
+        }
+      ],
+      "orderShipments": [],
+      "orderPayments": [
+        {
+          "id": 2110092983,
+          "origOrderPaymentId": null,
+          "orderId": 324060058,
+          "orderUUID": "052edd7a-8adb-40d7-acd6-57084593db90",
+          "orderLineId": 947646713,
+          "externalId": "4dc1e930-3c0d-4ed5-b8a6-ef8b3d8c1ea2",
+          "status": "SUCCESS",
+          "notes": null,
+          "billingAddressId": null,
+          "orderPaymentMOPtype": null,
+          "transSource": null,
+          "uniqueId": null,
+          "cmtId": null,
+          "legacyTransactionId": null,
+          "paymentServiceTransactionId": null,
+          "createdBy": null,
+          "createdDate": "2018-06-01 08:45:41.372 -0700",
+          "modifiedBy": null,
+          "modifiedDate": null,
+          "transactionDate": null,
+          "amount": 52.65,
+          "mopidentifier": null,
+          "cvv": null
+        }
+      ],
+      "issues": [],
+      "throwExceptionOnDuplicateOrderLine": false,
+      "successfulOrderPayments": [],
+      "orderAnnotations": {
+        "netsuiteExperimentFlag": "true",
+        "EMAIL.Order_Confirmation": "\"2018-06-01 08:45:40.286 -0700\"",
+        "authorizePaymentExternalUuid": "721be467-5a8e-4d05-b37f-40ece339c733",
+        "placedViaPlaceOrder": "true",
+        "vertexCustomerClassCode": "Private",
+        "api_testing": "true",
+        "EMAIL.Order_Confirmation_MESSAGE_ID": "[00000000-0000-0000-0000-000000000000]",
+        "legacy_billing_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX",
+        "fraud_bypassed": "2018-06-01T08:45:41.372-07:00"
+      }
+    },
+    "success": true
+  }
+]

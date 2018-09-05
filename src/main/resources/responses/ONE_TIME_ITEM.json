@@ -1,0 +1,233 @@
+[
+  {
+    "orderId": 324060046,
+    "sequence": [
+      "determine_cancellable_items_v3",
+      "determine_purchasable_items",
+      "determine_extension_options",
+      "determine_returnable_items",
+      "determine_address_changeable",
+      "determine_e_book_access",
+      "determine_order_level_totals",
+      "determine_order_line_level_totals",
+      "determine_issue_reportable_items",
+      "determine_order_level_diagnostics_v3"
+    ],
+    "endPoint": null,
+    "data": {
+      "verified.determine_e_book_access": "2018-08-16 03:05:12.017 -0700",
+      "LAST_PLUGIN_EVALUATED": "determine_order_level_diagnostics_v3",
+      "determine_order_line_level_totals": "Not yet implemented",
+      "Inputs": {
+        "orderIds": null,
+        "orderId": 324060046,
+        "orderLineIds": null,
+        "itemList": null,
+        "userId": null,
+        "orderKeys": null,
+        "issues": null,
+        "address": null,
+        "order": null,
+        "forceSequenceReload": false,
+        "inputData": null,
+        "ordersFetchLimitForUser": 0,
+        "shortResponse": false,
+        "paymentInfo": null
+      }
+    },
+    "errors": {},
+    "structuredErrors": {},
+    "order": {
+      "transitoryData": {
+        "canChangeAddress": false,
+        "chargeDetails": {
+          "itemPrice": 99,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 99
+        },
+        "netChargeDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "refundDetails": {
+          "itemPrice": 0,
+          "shippingPrice": 0,
+          "tax": 0,
+          "totalPrice": 0
+        },
+        "orderSummary": {
+          "orderLineCount": 1,
+          "rwywCount": 0,
+          "orderPaymentCount": 1,
+          "orderLinesByCatalogType": {
+            "ONE_TIME_ITEM": 1
+          },
+          "orderLinesByStatus": {
+            "FULFILLED": 1
+          },
+          "booksPerShipment": {},
+          "paymentsByDebitCredit": {
+            "DEBIT": 1
+          },
+          "paymentsByStatus": {
+            "AUTHORIZED": 1
+          }
+        }
+      },
+      "id": 324060046,
+      "uuid": "b2d6a897-ffda-4dcc-bc78-4a7180b3142a",
+      "lastExecutionStatus": "determine_order_level_diagnostics_v3-verified",
+      "annotation": {
+        "netsuiteExperimentFlag": "true",
+        "authorizePaymentExternalUuid": "4d68f430-adfb-4aa8-a575-7b4055abf2bd",
+        "vertexCustomerClassCode": "Private",
+        "api_testing": "true",
+        "legacy_billing_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX"
+      },
+      "createdBy": 75361664,
+      "createdDate": "2018-06-01 00:05:04.000 -0700",
+      "modifiedBy": null,
+      "modifiedDate": "2018-06-01 00:05:13.000 -0700",
+      "orderKey": "VZRFCZ3K",
+      "orderDate": "2018-06-01 00:05:05.000 -0700",
+      "userId": 75361664,
+      "uvn": null,
+      "status": "CHECKOUT_COMPLETE_PUBLISH_TO_SNS-VERIFIED",
+      "shippingAddress": null,
+      "billingAddress": {
+        "id": 178992331,
+        "orderId": null,
+        "orderAddressType": "BILLING_ADDRESS",
+        "firstName": "Api",
+        "lastName": "Testing",
+        "line1": "3990 Freedom Cir",
+        "line2": "",
+        "city": "Santa Clara",
+        "state": "CA",
+        "zip": "95054",
+        "country": "US",
+        "phone": "4088558700",
+        "createdBy": null,
+        "createdDate": null,
+        "modifiedBy": null,
+        "modifiedDate": null,
+        "5DigitZip": "95054"
+      },
+      "orderType": "REGULAR",
+      "orderLines": [
+        {
+          "transitoryData": {
+            "canCancel": false,
+            "canPurchase": false,
+            "canExtend": false,
+            "canReturn": false,
+            "total": 99,
+            "canReportIssue": false
+          },
+          "id": 947646700,
+          "uuid": "39310c29-d2a7-47e3-bbc1-14f0d6858105",
+          "lastExecutionStatus": null,
+          "annotation": {
+            "experimentId": "BASE",
+            "catalogItemSource": "NETSUITE",
+            "vertexTaxProductClass": "Test Prep Cobranded",
+            "hasTrial": "false",
+            "offerIds": "[KAP_GRE_BASIC]"
+          },
+          "createdBy": 75361664,
+          "createdDate": "2018-06-01 00:05:04.000 -0700",
+          "modifiedBy": null,
+          "modifiedDate": "2018-06-01 00:05:13.000 -0700",
+          "orderId": 324060046,
+          "catalogItemId": "1010",
+          "catalogItemType": "ONE_TIME_ITEM",
+          "catalogItemName": "GRE Prep - Kaplan for Chegg",
+          "quantity": 1,
+          "inventoryId": null,
+          "inventoryReservationId": null,
+          "itemType": "DIGITAL",
+          "transactionType": "SELL",
+          "orderLineStatus": "FULFILLED",
+          "displayStatus": null,
+          "pricingLogId": "30a88d73-4104-3082-9aa8-2066191a599e",
+          "itemPrice": 99,
+          "shippingPrice": 0,
+          "tax": 0,
+          "originalItemPrice": 99,
+          "listPrice": null,
+          "parentLineId": null,
+          "isCustomerVisible": true,
+          "rentalExpirationDate": null,
+          "orderLinePhysical": null,
+          "orderLineDigital": {
+            "orderId": 324060046,
+            "lineId": 947646700,
+            "accessCode": null,
+            "createdBy": 75361664,
+            "createdDate": "2018-06-01 00:05:04.513 -0700",
+            "modifiedBy": null,
+            "modifiedDate": null,
+            "fulfillDate": "2018-06-01 00:05:05.007 -0700"
+          },
+          "orderPayments": [],
+          "status": "FULFILLED",
+          "transType": "SELL",
+          "physical": false,
+          "shipOrFulfillDate": "2018-06-01 00:05:05.007 -0700",
+          "digital": true,
+          "orderLineAnnotation": {
+            "experimentId": "BASE",
+            "catalogItemSource": "NETSUITE",
+            "vertexTaxProductClass": "Test Prep Cobranded",
+            "hasTrial": "false",
+            "offerIds": "[KAP_GRE_BASIC]"
+          }
+        }
+      ],
+      "orderShipments": null,
+      "orderPayments": [
+        {
+          "id": 254106841,
+          "origOrderPaymentId": null,
+          "orderId": 324060046,
+          "orderUUID": "b2d6a897-ffda-4dcc-bc78-4a7180b3142a",
+          "orderLineId": null,
+          "externalId": "4d68f430-adfb-4aa8-a575-7b4055abf2bd",
+          "status": "AUTHORIZED",
+          "notes": null,
+          "billingAddressId": 178992331,
+          "orderPaymentMOPtype": "CREDITCARD",
+          "transSource": null,
+          "uniqueId": null,
+          "cmtId": null,
+          "legacyTransactionId": null,
+          "paymentServiceTransactionId": null,
+          "createdBy": 75361664,
+          "createdDate": "2018-06-01 00:05:05.646 -0700",
+          "modifiedBy": null,
+          "modifiedDate": null,
+          "transactionDate": null,
+          "amount": 99,
+          "mopidentifier": "116052911",
+          "cvv": null
+        }
+      ],
+      "issues": null,
+      "throwExceptionOnDuplicateOrderLine": false,
+      "successfulOrderPayments": [],
+      "orderAnnotations": {
+        "netsuiteExperimentFlag": "true",
+        "authorizePaymentExternalUuid": "4d68f430-adfb-4aa8-a575-7b4055abf2bd",
+        "vertexCustomerClassCode": "Private",
+        "api_testing": "true",
+        "legacy_billing_address_id": "1",
+        "order_lines_log_tax_quote_source": "VERTEX"
+      }
+    },
+    "success": true
+  }
+]
