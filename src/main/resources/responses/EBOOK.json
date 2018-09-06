@@ -1,8 +1,4 @@
-[{
-    OrderApiClient.OrderQuery query= new OrderApiClient.OrderQuery("some_user_id", "some_order_id");
-    System.out.println(query.toEntity(MediaType.APPLICATION_JSON_TYPE).toString());
-  }
-  {
+{
     "orderId": 324060058,
     "sequence": [
       "determine_cancellable_items_v3",
@@ -249,4 +245,3 @@
     },
     "success": true
   }
-]

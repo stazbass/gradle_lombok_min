@@ -1,11 +1,11 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class FReader {
+public class FileContent {
   public static String readFile(String path) {
     StringBuffer result = new StringBuffer();
     try {
-      BufferedReader reader = new BufferedReader(new InputStreamReader(FReader.class.getClassLoader().getResource(path).openStream()));
+      BufferedReader reader = new BufferedReader(new InputStreamReader(FileContent.class.getClassLoader().getResource(path).openStream()));
       String line;
       while ((line = reader.readLine()) != null) {
         result.append(line);

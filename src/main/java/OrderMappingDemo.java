@@ -5,35 +5,34 @@ import entities.Order;
 import entities.OrderDetails;
 import mapper.OrderMapper;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public class OrderMappingDemo {
-//  public Order readOrder(String file) {
-//    String fileContent = FReader.readFile(file);
-//    DataGenerator dataGenerator = new DataGenerator();
-//    Order order = (new Gson()).fromJson(fileContent, Order.class);
-//    CatalogItem item = (new Gson()).fromJson(FReader.readFile("catalog_item.json"), CatalogItem.class);
-//    List<CatalogItem> catalogItems = new LinkedList<>();
-//    order.getOrder().getOrderLines().stream().forEach(ol -> {
-//      CatalogItem catalogItem = (new Gson()).fromJson(FReader.readFile("catalog_item.json"), CatalogItem.class);
-//      catalogItem.setCatalogItemId(ol.getCatalogItemId());
-//      catalogItems.add(catalogItem);
-//    });
-//    System.out.println(catalogItems);
-//    return order;
-//  }
 
-  public CatalogItem getCatalogItem(String id){
-    CatalogItem item = (new Gson()).fromJson(FReader.readFile("catalog_item.json"), CatalogItem.class);
+
+  public CatalogItem getCatalogItem(String id) {
+    CatalogItem item = (new Gson()).fromJson(FileContent.readFile("catalog_item.json"), CatalogItem.class);
     item.setCatalogItemId(id);
     return item;
   }
 
   public void main(Object... args) {
-    Order order =(new Gson()).fromJson( FReader.readFile("responses/COUPON.json"), Order.class);
-    order.getOrder().getOrderLines().stream().forEach(ol->ol.setCatalogItem(getCatalogItem(ol.getCatalogItemId())));
-    OrderDetails orderDetails = OrderMapper.OrderMainMapper.instance.toOrderDetails(order.getOrder());
-//    System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(orderDetails));
+
+    String[] availableFiles = new String[]{
+        "responses/COUPON.json",
+        "responses/DONATION.json",
+        "responses/EBOOK.json",
+        "responses/FIXED_RECURRING_ITEM.json",
+        "responses/ONE_TIME_BUNDLE_ITEM.json",
+        "responses/ONE_TIME_ITEM.json",
+        "responses/RECURING_BUNDLE_ITEM.json",
+        "responses/REGULAR.json",
+        "responses/SUBSCRIPTION.json",
+        "responses/TEXTBOOK.json"};
+    for(String file : availableFiles){
+      System.out.println(String.format("Parsing %s", file));
+      Order order = (new Gson()).fromJson(FileContent.readFile(file), Order.class);
+      order.getOrder().getOrderLines().stream().forEach(ol -> ol.setCatalogItem(getCatalogItem(ol.getCatalogItemId())));
+      OrderDetails orderDetails = OrderMapper.OrderMainMapper.instance.toOrderDetails(order.getOrder());
+      System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(orderDetails));
+    }
   }
 }
