@@ -3,13 +3,13 @@ package mapper;
 import entities.dest.DestinationEntity;
 import entities.source.ExternalEntity;
 import entities.source.SourceEntity;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
-import org.mapstruct.TargetType;
+import org.mapstruct.*;
 import org.mapstruct.factory.Mappers;
 
+import java.util.List;
 import java.util.UUID;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 @Mapper
 public interface SourceMapper {
@@ -21,8 +21,8 @@ public interface SourceMapper {
   })
   DestinationEntity sourceToDest(SourceEntity source);
   
-  default <T extends ExternalEntity> T resolveExternalEntity(String sourceEntityId, @TargetType Class<T> entityClass){
+  default <T extends ExternalEntity> T resolveExternalEntity(String sourceEntityId, @TargetType Class<T> entityClass, @Context Function<String, ExternalEntity> entitySource){
     
-    return (T)ExternalEntity.builder().id(sourceEntityId).randomName(UUID.randomUUID().toString()).build();
+    return (T)entitySource.get(sourceEntityId);
   }
 }
