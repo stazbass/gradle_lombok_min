@@ -1,5 +1,5 @@
-import entities.DestinationEntity;
-import entities.SourceEntity;
+import entities.dest.DestinationEntity;
+import entities.source.SourceEntity;
 import mapper.SourceMapper;
 
 import java.util.UUID;
@@ -10,7 +10,7 @@ import java.util.UUID;
 public class App {
     public void runApp(){
         System.out.println("mapstruct + lombok show !");
-        SourceEntity source = SourceEntity.builder().id(UUID.randomUUID().toString()).name("drakula").build();
+        SourceEntity source = SourceEntity.builder().id(UUID.randomUUID().toString()).name("drakula").externalEntityId("224").build();
         DestinationEntity destinationEntity = SourceMapper.MAPPER.sourceToDest(source);
         System.out.println(destinationEntity);
     }

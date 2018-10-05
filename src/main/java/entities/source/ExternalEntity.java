@@ -1,4 +1,4 @@
-package entities;
+package entities.source;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class DestinationEntity {
+public class ExternalEntity {
   private String id;
-  private String name;
+  private String randomName;
 }
